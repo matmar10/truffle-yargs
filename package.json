@@ -1,0 +1,35 @@
+{
+  "name": "abi-to-yargs",
+  "version": "0.0.1",
+  "description": "Read a JSON ABI definition and turn it into sensible yargs commands with options.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/matmar10/abi-to-yargs.git"
+  },
+  "keywords": [
+    "yargs",
+    "solidity",
+    "nodejs",
+    "abi",
+    "command",
+    "line"
+  ],
+  "author": "Matthew J. Martin",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/matmar10/abi-to-yargs/issues"
+  },
+  "homepage": "https://github.com/matmar10/abi-to-yargs#readme",
+  "devDependencies": {
+    "eslint-plugin-es-beautifier": "^1.0.1",
+    "yargs": "^14.0.0"
+  },
+  "dependencies": {
+    "bn.js": "^5.0.0",
+    "deepmerge": "^4.0.0"
+  }
+}
