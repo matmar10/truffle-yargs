@@ -2,16 +2,14 @@
 
 const AbiYargsAdapter = require('./lib/abi-yargs-adapter');
 const abiReader = require('./lib/abi-reader');
-const merge = require('deepmerge');
 
-const yargsBinderFactory = function (yargs, options) {
-  const adapter = new AbiYargsAdapter(yargs, options);
-  const factoryFunction = function (globPaths, overrideOptions) {
-    const opts = merge(options, overrideOptions);
-    const contractAbiDefinitions = abiReader(globPaths, opts);
-    return adapter.buildYargsFromAbiMap(contractAbiDefinitions, overrideOptions);
+const yargsBinderFactory = function (yargs) {
+  const factoryFunction = function (globPaths, options) {
+    const adapter = new AbiYargsAdapter(yargs, options);
+    factoryFunction.abiYargsAdapter = adapter;
+    const contractAbiDefinitions = abiReader(globPaths, options);
+    return adapter.buildYargsFromArtifactMap(contractAbiDefinitions, options);
   };
-  factoryFunction.abiYargsAdapter = adapter;
   return factoryFunction;
 };
 yargsBinderFactory.AbiYargsAdaptor = AbiYargsAdapter;

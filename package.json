@@ -29,6 +29,7 @@
     "yargs": "^14.0.0"
   },
   "dependencies": {
+    "@truffle/contract": "^4.0.36",
     "bn.js": "^5.0.0",
     "deepmerge": "^4.0.0",
     "glob": "^7.1.4",
