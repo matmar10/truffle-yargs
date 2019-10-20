@@ -30,6 +30,8 @@
   },
   "dependencies": {
     "bn.js": "^5.0.0",
-    "deepmerge": "^4.0.0"
+    "deepmerge": "^4.0.0",
+    "glob": "^7.1.4",
+    "web3": "^1.2.1"
   }
 }
