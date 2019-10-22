@@ -1,6 +1,6 @@
 {
   "name": "abi-to-yargs",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Read a JSON ABI definition and turn it into sensible yargs commands with options.",
   "main": "index.js",
   "scripts": {
