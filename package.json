@@ -1,6 +1,6 @@
 {
   "name": "truffle-yargs",
-  "version": "0.1.3",
+  "version": "0.2.0",
   "description": "Add hearty bash commands to contracts what be stowed in ye's truffle project:",
   "main": "index.js",
   "scripts": {
