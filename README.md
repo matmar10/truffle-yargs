@@ -6,10 +6,17 @@
 Add hearty bash commands to contracts what be stowed in ye's truffle project:
 
 ```bash
-./example USDC.balanceOf \
+truffle-contract USDC.balanceOf \
   --at 0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48 \
   --address 0xdfcb116732ebc9ae2c8939b053363bcf48a37a99 \
   --network mainnet
+```
+
+# CLI Standalone
+
+```
+npm install -g truffle-yargs
+truffle-contract --dir path-to-your/truffle-project
 ```
 
 # Install

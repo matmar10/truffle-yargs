@@ -4,7 +4,10 @@
   "description": "Read a JSON ABI definition and turn it into sensible yargs commands with options.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "release": "release-it"
+  },
+  "bin": {
+    "truffle-contract": "./cli.js"
   },
   "repository": {
     "type": "git",
@@ -26,6 +29,7 @@
   "homepage": "https://github.com/matmar10/abi-to-yargs#readme",
   "devDependencies": {
     "eslint-plugin-es-beautifier": "^1.0.1",
+    "release-it": "^12.4.3",
     "yargs": "^14.0.0"
   },
   "dependencies": {
@@ -35,5 +39,19 @@
     "deepmerge": "^4.0.0",
     "glob": "^7.1.4",
     "web3": "^1.2.1"
+  },
+  "release-it": {
+    "git": {
+      "commit": true,
+      "requireUpstream": false,
+      "tag": true,
+      "push": true
+    },
+    "github": {
+      "release": true
+    },
+    "npm": {
+      "publish": true
+    }
   }
 }
