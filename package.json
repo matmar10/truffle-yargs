@@ -1,7 +1,7 @@
 {
-  "name": "abi-to-yargs",
+  "name": "truffle-yargs",
   "version": "0.1.0",
-  "description": "Read a JSON ABI definition and turn it into sensible yargs commands with options.",
+  "description": "Add hearty bash commands to contracts what be stowed in ye's truffle project:",
   "main": "index.js",
   "scripts": {
     "release": "release-it"
