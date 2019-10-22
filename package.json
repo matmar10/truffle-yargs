@@ -29,8 +29,7 @@
   "homepage": "https://github.com/matmar10/abi-to-yargs#readme",
   "devDependencies": {
     "eslint-plugin-es-beautifier": "^1.0.1",
-    "release-it": "^12.4.3",
-    "yargs": "^14.0.0"
+    "release-it": "^12.4.3"
   },
   "dependencies": {
     "@truffle/config": "^1.2.2",
@@ -38,7 +37,8 @@
     "bn.js": "^5.0.0",
     "deepmerge": "^4.0.0",
     "glob": "^7.1.4",
-    "web3": "^1.2.1"
+    "web3": "^1.2.1",
+    "yargs": "^14.0.0"
   },
   "release-it": {
     "git": {
