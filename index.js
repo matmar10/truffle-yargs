@@ -5,7 +5,7 @@ const path = require('path');
 const AbiYargsAdapter = require('./lib/yargs-adapter');
 const abiReader = require('./lib/abi-reader');
 
-const defaultWorkingDirectory = path.join(__dirname, '/../../../');
+const defaultWorkingDirectory = path.join(__dirname, '/../../');
 
 const defaults = {
   workingDirectory: defaultWorkingDirectory,
