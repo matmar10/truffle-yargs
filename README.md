@@ -27,6 +27,10 @@ npm install --save truffle-yargs
 
 # Quick Usage
 
+Roll your own CLI within your own truffle project.
+
+For example, create a `cli.js` with your truffle project:
+
 ```javascript
 #!/usr/bin/env node
 
@@ -34,6 +38,7 @@ const path = require('path');
 const yargs = require('yargs');
 const truffleYargs = require('truffle-yargs')(yargs);
 
+// by default, this will scan truffle default contracts location
 truffleYargs()
   .demandCommand(1, 'Specify at least one command to run.')
   .strict()
