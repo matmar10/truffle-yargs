@@ -37,6 +37,7 @@
     "bn.js": "^5.0.0",
     "deepmerge": "^4.0.0",
     "glob": "^7.1.4",
+    "truffle-hdwallet-provider-privkey": "^0.3.0",
     "web3": "^1.2.1",
     "yargs": "^14.0.0"
   },

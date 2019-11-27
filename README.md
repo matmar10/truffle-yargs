@@ -46,6 +46,27 @@ truffleYargs()
   .argv;
 ```
 
+# Programmatic Usage
+
+Run the methods as commands with the same validation and parsing:
+
+```javascript
+const yargs = require('yargs');
+const truffleYargs = require('truffle-yargs')(yargs);
+
+try {
+  truffleYargs()
+    .contract('Token', '0x468d834b0FAc4B9D8B2E90bE1cE35A891Ff96Ae9')
+    .balanceOf({
+      owner: '0x4a378afbc608073d4520c91d70d06cb79a0a31c5',
+    })
+    .then(balance => {
+      console.log('Balance is:', balance);
+    }, err => {
+      console.error('Error:', err);
+    });
+```
+
 # Options
 
 ## provider (optional)

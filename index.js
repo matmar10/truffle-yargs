@@ -13,7 +13,7 @@ const defaults = {
 };
 
 const yargsBinderFactory = function (yargs) {
-  const factoryFunction = function (options) {
+  const factoryFunction = function (options = {}) {
     const opts = merge(defaults, options);
     const adapter = new AbiYargsAdapter(yargs, opts);
     factoryFunction.abiYargsAdapter = adapter;
