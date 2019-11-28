@@ -42,6 +42,7 @@
     "yargs": "^14.0.0"
   },
   "release-it": {
+    "non-interactive": true,
     "git": {
       "commit": true,
       "requireUpstream": false,
