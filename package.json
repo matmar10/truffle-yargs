@@ -29,7 +29,7 @@
   "homepage": "https://github.com/matmar10/abi-to-yargs#readme",
   "devDependencies": {
     "eslint-plugin-es-beautifier": "^1.0.1",
-    "release-it": "^12.4.3"
+    "release-it": "^15.6.0"
   },
   "dependencies": {
     "@truffle/config": "^1.2.2",
